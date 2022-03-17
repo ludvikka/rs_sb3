@@ -304,7 +304,7 @@ class LiftSquareObject(SingleArmEnv):
                 ensure_object_boundary_in_range=False,
                 ensure_valid_placement=True,
                 reference_pos=self.table_offset,
-                z_offset=0.01,
+                z_offset=0.5,
             )
         self.target = self.objects[0]
 
