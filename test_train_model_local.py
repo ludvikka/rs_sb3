@@ -64,8 +64,8 @@ env = suite.make(
     camera_depths=[True],
     use_object_obs=False,
     controller_configs=controller_config,
-    control_freq = 1,
-    horizon = 25,
+    controf_freq = 1
+    horizon = 200
 )
 
 env = DomainRandomizationWrapper(
@@ -85,7 +85,7 @@ gym_env = CustomGymWrapper(env,['calibrated_camera_image','robot0_joint_pos'])
 obs = gym_env.reset()
 
 
-model = PPO('MultiInputPolicy', gym_env, n_steps = 1000,verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
+model = PPO('MultiInputPolicy', gym_env, n_steps = 100000,verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
 print("starting to learn")
 model.learn(total_timesteps = 100000, log_interval= 10000,  tb_log_name="test")
 
