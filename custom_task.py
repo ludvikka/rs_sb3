@@ -11,7 +11,7 @@ from robosuite.environments.manipulation.single_arm_env import SingleArmEnv
 from robosuite.models.arenas import TableArena
 from robosuite.models.objects import BoxObject
 
-from robosuite.models.objects import LemonObject, BreadObject
+from robosuite.models.objects import LemonObject, BreadObject, BoxObject
 
 from robosuite.models.tasks import ManipulationTask
 from robosuite.utils.mjcf_utils import CustomMaterial
@@ -179,14 +179,14 @@ class LiftSquareObject(SingleArmEnv):
             tex_attrib=tex_attrib,
             mat_attrib=mat_attrib,
         )
-        cube = BoxObject(
+        self.cube = BoxObject(
             name="cube",
             size_min=[0.020, 0.020, 0.020],  # [0.015, 0.015, 0.015],
             size_max=[0.022, 0.022, 0.022],  # [0.018, 0.018, 0.018])
             rgba=[1, 0, 0, 1],
             material=redwood,
         )
-        self.objects = cube
+        self.objects = [self.cube]
 
 
 

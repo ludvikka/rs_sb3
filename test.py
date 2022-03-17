@@ -19,8 +19,7 @@ from stable_baselines3 import PPO
 controller_config = load_controller_config(default_controller="OSC_POSE")
 
 #objects = [LemonObject(name = "Lemon"),BreadObject(name = "Bread")]
-
-"""env = suite.make(
+env = suite.make(
     camera_pos = (-0.4,  -0.4 ,  1.5), 
     camera_quat = euler_angel_to_quat([40,0,-40]),
     env_name="LiftRandomObject", # try with other tasks like "Stack" and "Door"

@@ -6,12 +6,12 @@ from PIL import Image
 from scipy import ndimage
 
 
-from objects import LemonObject, BreadObject
+from objects import LemonObject, BreadObject, BoxObject
 objects = [LemonObject(name = "Lemon"),BreadObject(name = "Bread")]
 
 
 
-from custom_task import LiftRandomObject
+from custom_task import LiftSquareObject
 
 from custom_utils import euler_angel_to_quat
 from custom_gym_wrapper import CustomGymWrapper
@@ -37,9 +37,12 @@ trans_matrix_org = np.array([[ 5.55111512e-17,  2.57400000e-01, -9.63200000e-01,
 
 from robosuite.utils.transform_utils import mat2quat
 camera_quat = mat2quat(trans_matrix_org[:3,:3])
-camera_quat = [-camera_quat[0],camera_quat[2],camera_quat[3],-camera_quat[1]]
-#pos = trans_matrix_org[0:3,3]*0.001
+print(camera_quat)
+camera_quat = [0.6743090152740479, 0.21285612881183624, 0.21285581588745117, 0.6743084788322449]
+#camera_quat = [-camera_quat[0],camera_quat[2],camera_quat[3],-camera_quat[1]]
+
 pos = trans_matrix_org[0:3,3]
+pos = [0.626,0,1.6815]
 height_vs_width_relattion = 754/449
 camera_attribs = {'fovy': 31.0350747}
 camera_h = 640
@@ -53,7 +56,7 @@ env = suite.make(
     camera_pos = pos,#(1.1124,-0.046,1.615),#(1.341772827,  -0.312295471 ,  0.182150085+1.5), 
     camera_quat = camera_quat,#(0.5608417987823486, 0.4306466281414032, 0.4306466579437256, 0.5608419179916382),# frontview quat
     camera_attribs = camera_attribs,
-    env_name="LiftRandomObject", # try with other tasks like "Stack" and "Door"
+    env_name="LiftSquareObject", # try with other tasks like "Stack" and "Door"
     robots="IIWA",  # try with other robots like "Sawyer" and "Jaco"
     gripper_types="Robotiq85Gripper",
     has_renderer=False,
@@ -81,11 +84,8 @@ env = DomainRandomizationWrapper(
     randomize_on_reset=True, randomize_every_n_steps=0)
     
 
-#gym_env = CustomGymWrapperRGBD(env,['calibrated_camera','robot0_joint_pos'])
 gym_env = CustomGymWrapper(env,['calibrated_camera_image','robot0_joint_pos'])
-print(gym_env.observation_space)
 obs = gym_env.reset()
-print(obs)
 
 
 model = PPO('MultiInputPolicy', gym_env, verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
