@@ -1,10 +1,6 @@
 
 import gym
 import robosuite as suite
-import matplotlib.pyplot as plt
-from PIL import Image
-from scipy import ndimage
-
 
 from objects import LemonObject, BreadObject, BoxObject
 objects = [LemonObject(name = "Lemon"),BreadObject(name = "Bread")]
