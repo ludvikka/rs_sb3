@@ -22,7 +22,7 @@ from robosuite.utils.transform_utils import convert_quat
 from robosuite.utils.camera_utils import get_real_depth_map
 
 
-class LiftRandomObject(SingleArmEnv):
+class LiftSquareObject(SingleArmEnv):
     """
     This class corresponds to the lifting task for a single robot arm.
     Args:
@@ -163,8 +163,32 @@ class LiftRandomObject(SingleArmEnv):
         # object placement initializer
         self.placement_initializer = placement_initializer
 
-        #objects
-        self.objects = objects
+        #objects      
+        tex_attrib = {
+            "type": "cube",
+        }
+        mat_attrib = {
+            "texrepeat": "1 1",
+            "specular": "0.4",
+            "shininess": "0.1",
+        }
+        redwood = CustomMaterial(
+            texture="WoodRed",
+            tex_name="redwood",
+            mat_name="redwood_mat",
+            tex_attrib=tex_attrib,
+            mat_attrib=mat_attrib,
+        )
+        cube = BoxObject(
+            name="cube",
+            size_min=[0.020, 0.020, 0.020],  # [0.015, 0.015, 0.015],
+            size_max=[0.022, 0.022, 0.022],  # [0.018, 0.018, 0.018])
+            rgba=[1, 0, 0, 1],
+            material=redwood,
+        )
+        self.objects = cube
+
+
 
         super().__init__(
             robots=robots,
