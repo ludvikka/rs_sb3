@@ -5,7 +5,7 @@ import robosuite as suite
 from objects import LemonObject, BreadObject, BoxObject
 objects = [LemonObject(name = "Lemon"),BreadObject(name = "Bread")]
 
-
+import time
 
 from custom_task import LiftSquareObject
 
@@ -41,7 +41,7 @@ pos = trans_matrix_org[0:3,3]
 pos = [0.626,0,1.6815]
 height_vs_width_relattion = 754/449
 camera_attribs = {'fovy': 31.0350747}
-camera_h = 640
+camera_h = 240
 camera_w = int(camera_h * height_vs_width_relattion)
 
 
@@ -88,7 +88,7 @@ from stable_baselines3.common.vec_env import SubprocVecEnv
 
 from stable_baselines3.common.utils import set_random_seed
 
-num_cpu =12
+num_cpu = 8
 def make_env(rank, seed=0):
     """
     Utility function for multiprocessed env.
@@ -111,8 +111,16 @@ def make_env(rank, seed=0):
 #model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 1000,verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
 #print("starting to learn")
 #model.learn(total_timesteps = 100000, log_interval= 10000,  tb_log_name="test")
-if __name__ == '__main__': 
+if __name__ == '__main__':
+  tic = time.perf_counter()
   vec_gym_env = SubprocVecEnv([make_env(i) for i in range(num_cpu)])
-  model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 100,verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
+  toc_1 = time.perf_counter()
+
+
+  model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 100,verbose=2, tensorboard_log=None)
+  print(f"envs and model setup in {toc_1 - tic:0.4f}")
   print("starting to learn")
-  model.learn(total_timesteps = 100000, log_interval= 10000,  tb_log_name="test")
+  tic = time.perf_counter()
+  model.learn(total_timesteps = 200)
+  toc_2 = time.perf_counter()
+  print(f"training done in  {toc_2 - tic:0.4f}")
