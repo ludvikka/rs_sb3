@@ -54,8 +54,8 @@ def makeEnv():
       camera_depths=[True],
       use_object_obs=False,
       controller_configs=controller_config,
-      control_freq = 2,
-      horizon = 40,
+      control_freq = 4,
+      horizon = 80,
       reward_shaping = True,
   )
 
