@@ -2,7 +2,7 @@ CUSTOM_COLOR_ARGS = {
     "geom_names": None,  # all geoms are randomized
     "randomize_local": True,  # sample nearby colors   !!Changed!!
     "randomize_material": True,  # randomize material reflectance / shininess / specular
-    "local_rgb_interpolation": 2,
+    "local_rgb_interpolation": 0.2,
     "local_material_interpolation": 2,
     "texture_variations": ["rgb", "checker", "noise", "gradient"],  # all texture variation types
     "randomize_skybox": True,  # by default, randomize skybox too
@@ -26,11 +26,11 @@ CUSTOM_LIGHTING_ARGS = {
     "randomize_ambient": True,
     "randomize_diffuse": True,
     "randomize_active": True,
-    "position_perturbation_size": 0.5,
-    "direction_perturbation_size": 0.65,
-    "specular_perturbation_size": 0.5,
-    "ambient_perturbation_size": 0.5,
-    "diffuse_perturbation_size": 0.5,
+    "position_perturbation_size": 0.3,
+    "direction_perturbation_size": 0.35,
+    "specular_perturbation_size": 0.2,
+    "ambient_perturbation_size": 0.2,
+    "diffuse_perturbation_size": 0.2,
 }
 
 CUSTOM_DYNAMICS_ARGS = {

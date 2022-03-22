@@ -184,9 +184,9 @@ class LiftSquareObject(SingleArmEnv):
             size_min=[0.020, 0.020, 0.020],  # [0.015, 0.015, 0.015],
             size_max=[0.022, 0.022, 0.022],  # [0.018, 0.018, 0.018])
             rgba=[1, 0, 0, 1],
-            material=redwood,
         )
         self.objects = [self.cube]
+        
 
 
 
@@ -246,12 +246,12 @@ class LiftSquareObject(SingleArmEnv):
             # reaching reward
             object_pos = self.sim.data.body_xpos[self.object_body_id]    
             gripper_site_pos = self.sim.data.site_xpos[self.robots[0].eef_site_id]
-            dist = np.linalg.norm(gripper_site_pos - object_pos)    
-            reaching_reward = 1 - np.tanh(10.0 * dist)
+            dist = np.linalg.norm(gripper_site_pos - object_pos)  
+            reaching_reward = (1 - np.tanh(10.0 * dist))*0.2
             reward += reaching_reward
 
             # grasping reward
-            if self._check_grasp(gripper=self.robots[0].gripper, object_geoms=self.object):
+            if self._check_grasp(gripper=self.robots[0].gripper, object_geoms=self.target):
                 reward += 0.25
 
         # Scale reward if requested
@@ -298,8 +298,8 @@ class LiftSquareObject(SingleArmEnv):
             self.placement_initializer = UniformRandomSampler(
                 name="ObjectSampler",
                 mujoco_objects=self.objects,
-                x_range=[-0., 0.], #these are changed from x_range=[-0.03, 0.03],  y_range=[-0.03, 0.03],
-                y_range=[-0., 0.],
+                x_range=[-0.1, 0.1], #these are changed from x_range=[-0.03, 0.03],  y_range=[-0.03, 0.03],
+                y_range=[-0.1, 0.1],
                 rotation=None,
                 ensure_object_boundary_in_range=False,
                 ensure_valid_placement=True,
@@ -414,6 +414,7 @@ class LiftSquareObject(SingleArmEnv):
             bool: True if cube has been lifted
         """
         object_height = self.sim.data.body_xpos[self.object_body_id][2]
+
         table_height = self.model.mujoco_arena.table_offset[2]
 
         # cube is higher than the table top above a margin
