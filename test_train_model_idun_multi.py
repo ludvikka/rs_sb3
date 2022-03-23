@@ -77,7 +77,7 @@ def makeEnv():
 from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3.common.utils import set_random_seed
 
-num_cpu = 2
+num_cpu = 8
 def make_env(rank, seed=0):
     """
     Utility function for multiprocessed env.
