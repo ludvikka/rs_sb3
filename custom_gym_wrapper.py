@@ -1,4 +1,5 @@
 
+from asyncio.base_futures import _FINISHED
 import numpy as np
 from gym import spaces
 from gym.core import Env
@@ -92,6 +93,7 @@ class CustomGymWrapper(Wrapper, Env):
         Returns:
             np.array: Flattened environment observation space after reset occurs
         """
+        print("-------------reset----------------")
         ob_dict = self.env.reset()
         return self._flatten_obs(ob_dict)
 
@@ -108,6 +110,8 @@ class CustomGymWrapper(Wrapper, Env):
                 - (dict) misc information
         """
         ob_dict, reward, done, info = self.env.step(action)
+        if done == True:
+            print("episode _FINISHED")
         return self._flatten_obs(ob_dict), reward, done, info
 
     def seed(self, seed=None):
