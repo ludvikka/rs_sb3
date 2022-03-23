@@ -65,8 +65,9 @@ def makeEnv():
     
 from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3.common.utils import set_random_seed
+from stable_baselines3.common.monitor import Monitor
 
-num_cpu = 24
+num_cpu = 12
 def make_env(rank, seed=0):
     """
     Utility function for multiprocessed env.
@@ -79,6 +80,7 @@ def make_env(rank, seed=0):
     def _init():
         env = makeEnv()
         env.seed(seed + rank)
+        env = Monitor(env)
         return env
     set_random_seed(seed)
     return _init
@@ -89,10 +91,10 @@ if __name__ == '__main__':
   toc_1 = time.perf_counter()
 
 
-  model = SAC('MultiInputPolicy', vec_gym_env, n_steps = 400,verbose=2, batch_size=200, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
+  model = SAC('MultiInputPolicy', vec_gym_env, buffer_size=100000, train_freq = (500, "step"), verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/',device='cpu')
   print(f"envs and model setup in {toc_1 - tic:0.4f}")
   print("starting to learn")
   tic = time.perf_counter()
-  model.learn(total_timesteps = 400*3*8*5, log_interval= 1, tb_log_name="test")
+  model.learn(total_timesteps = 400*3*8*5, log_interval= 1, tb_log_name="test_sac")
   toc_2 = time.perf_counter()
   print(f"training done in  {toc_2 - tic:0.4f}")
