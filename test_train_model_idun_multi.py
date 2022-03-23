@@ -100,7 +100,7 @@ if __name__ == '__main__':
   toc_1 = time.perf_counter()
 
 
-  model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 400,verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/',device='cpu')
+  model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 400,verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
   print(f"envs and model setup in {toc_1 - tic:0.4f}")
   print("starting to learn")
   tic = time.perf_counter()
