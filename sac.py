@@ -15,7 +15,7 @@ from robosuite import load_controller_config
 from domain_randomization_wrapper_args import CUSTOM_CAMERA_ARGS, CUSTOM_COLOR_ARGS, CUSTOM_DYNAMICS_ARGS, CUSTOM_LIGHTING_ARGS, NO_CAMERA_ARGS, NO_COLOR_ARGS, NO_LIGHTING_ARGS
 from robosuite.wrappers import DomainRandomizationWrapper
 
-from stable_baselines3 import PPO
+from stable_baselines3 import SAC
 
 def makeEnv():
   camera_quat = [0.6743090152740479, 0.21285612881183624, 0.21285581588745117, 0.6743084788322449]
@@ -65,7 +65,6 @@ def makeEnv():
     
 from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3.common.utils import set_random_seed
-from stable_baselines3.common.monitor import Monitor
 
 num_cpu = 24
 def make_env(rank, seed=0):
@@ -80,7 +79,6 @@ def make_env(rank, seed=0):
     def _init():
         env = makeEnv()
         env.seed(seed + rank)
-        env = Monitor(env)
         return env
     set_random_seed(seed)
     return _init
@@ -91,7 +89,7 @@ if __name__ == '__main__':
   toc_1 = time.perf_counter()
 
 
-  model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 400,verbose=2, batch_size=200, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
+  model = SAC('MultiInputPolicy', vec_gym_env, n_steps = 400,verbose=2, batch_size=200, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
   print(f"envs and model setup in {toc_1 - tic:0.4f}")
   print("starting to learn")
   tic = time.perf_counter()
