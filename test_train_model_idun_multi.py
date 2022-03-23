@@ -17,23 +17,12 @@ from robosuite.wrappers import DomainRandomizationWrapper
 
 from stable_baselines3 import PPO
 
-camera_quat = [0.6743090152740479, 0.21285612881183624, 0.21285581588745117, 0.6743084788322449]
-pos = [0.626,0,1.6815]
-height_vs_width_relattion = 754/449
-camera_attribs = {'fovy': 31.0350747}
-camera_h = 240
-camera_w = int(camera_h * height_vs_width_relattion)
-
-
-
-
-controller_config = load_controller_config(default_controller="JOINT_POSITION")
 def makeEnv():
   camera_quat = [0.6743090152740479, 0.21285612881183624, 0.21285581588745117, 0.6743084788322449]
   pos = [0.626,0,1.6815]
   height_vs_width_relattion = 754/449
   camera_attribs = {'fovy': 31.0350747}
-  camera_h = 640
+  camera_h = 240
   camera_w = int(camera_h * height_vs_width_relattion)
 
   controller_config = load_controller_config(default_controller="JOINT_POSITION")
@@ -100,7 +89,7 @@ if __name__ == '__main__':
   toc_1 = time.perf_counter()
 
 
-  model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 2000,verbose=2, batch_size=200, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
+  model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 1000,verbose=2, batch_size=200, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
   print(f"envs and model setup in {toc_1 - tic:0.4f}")
   print("starting to learn")
   tic = time.perf_counter()
