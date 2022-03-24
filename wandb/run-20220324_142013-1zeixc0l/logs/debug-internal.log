@@ -1,0 +1,74 @@
+2022-03-24 14:20:13,610 INFO    MainThread:158634 [internal.py:wandb_internal():92] W&B internal server running at pid: 158634, started at: 2022-03-24 14:20:13.610289
+2022-03-24 14:20:13,612 INFO    WriterThread:158634 [datastore.py:open_for_write():77] open: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/run-1zeixc0l.wandb
+2022-03-24 14:20:13,613 DEBUG   SenderThread:158634 [sender.py:send():235] send: header
+2022-03-24 14:20:13,613 DEBUG   SenderThread:158634 [sender.py:send():235] send: run
+2022-03-24 14:20:13,912 INFO    SenderThread:158634 [dir_watcher.py:__init__():169] watching files in: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files
+2022-03-24 14:20:13,913 INFO    SenderThread:158634 [sender.py:_start_run_threads():812] run started: 1zeixc0l with start time 1648128013
+2022-03-24 14:20:13,913 DEBUG   SenderThread:158634 [sender.py:send():235] send: summary
+2022-03-24 14:20:13,913 INFO    SenderThread:158634 [sender.py:_save_file():947] saving file wandb-summary.json with policy end
+2022-03-24 14:20:13,917 DEBUG   HandlerThread:158634 [handler.py:handle_request():141] handle_request: check_version
+2022-03-24 14:20:13,917 DEBUG   SenderThread:158634 [sender.py:send_request():249] send_request: check_version
+2022-03-24 14:20:14,067 DEBUG   HandlerThread:158634 [handler.py:handle_request():141] handle_request: run_start
+2022-03-24 14:20:14,938 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/wandb-summary.json
+2022-03-24 14:20:15,291 DEBUG   HandlerThread:158634 [meta.py:__init__():37] meta init
+2022-03-24 14:20:15,291 DEBUG   HandlerThread:158634 [meta.py:__init__():51] meta init done
+2022-03-24 14:20:15,291 DEBUG   HandlerThread:158634 [meta.py:probe():211] probe
+2022-03-24 14:20:15,297 DEBUG   HandlerThread:158634 [meta.py:_setup_git():201] setup git
+2022-03-24 14:20:15,320 DEBUG   HandlerThread:158634 [meta.py:_setup_git():208] setup git done
+2022-03-24 14:20:15,321 DEBUG   HandlerThread:158634 [meta.py:_save_pip():55] save pip
+2022-03-24 14:20:15,321 DEBUG   HandlerThread:158634 [meta.py:_save_pip():69] save pip done
+2022-03-24 14:20:15,321 DEBUG   HandlerThread:158634 [meta.py:_save_conda():76] save conda
+2022-03-24 14:20:15,939 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/requirements.txt
+2022-03-24 14:20:15,940 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/conda-environment.yaml
+2022-03-24 14:20:17,131 DEBUG   HandlerThread:158634 [meta.py:_save_conda():86] save conda done
+2022-03-24 14:20:17,131 DEBUG   HandlerThread:158634 [meta.py:probe():249] probe done
+2022-03-24 14:20:17,134 DEBUG   SenderThread:158634 [sender.py:send():235] send: files
+2022-03-24 14:20:17,134 INFO    SenderThread:158634 [sender.py:_save_file():947] saving file wandb-metadata.json with policy now
+2022-03-24 14:20:17,137 DEBUG   HandlerThread:158634 [handler.py:handle_request():141] handle_request: stop_status
+2022-03-24 14:20:17,137 DEBUG   SenderThread:158634 [sender.py:send_request():249] send_request: stop_status
+2022-03-24 14:20:17,459 DEBUG   SenderThread:158634 [sender.py:send():235] send: telemetry
+2022-03-24 14:20:17,461 DEBUG   SenderThread:158634 [sender.py:send():235] send: telemetry
+2022-03-24 14:20:17,940 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/conda-environment.yaml
+2022-03-24 14:20:17,940 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/wandb-metadata.json
+2022-03-24 14:20:17,940 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/output.log
+2022-03-24 14:20:17,980 INFO    Thread-11 :158634 [upload_job.py:push():137] Uploaded file /tmp/tmpgbyyc3g9wandb/3ml7il4l-wandb-metadata.json
+2022-03-24 14:20:21,945 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/output.log
+2022-03-24 14:20:23,945 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/output.log
+2022-03-24 14:20:25,530 INFO    HandlerThread:158634 [handler.py:handle_tbrecord():687] handling tbrecord: tbrecord {
+  log_dir: "runs/1zeixc0l/test_1"
+  save: true
+}
+
+2022-03-24 14:20:25,531 DEBUG   HandlerThread:158634 [config_util.py:dict_from_config_file():102] no default config file found in config-defaults.yaml
+2022-03-24 14:20:25,540 DEBUG   SenderThread:158634 [sender.py:send():235] send: tbrecord
+2022-03-24 14:20:25,541 DEBUG   SenderThread:158634 [sender.py:send():235] send: files
+2022-03-24 14:20:25,542 INFO    SenderThread:158634 [sender.py:_save_file():947] saving file events.out.tfevents.1648128025.pop-os.158575.0 with policy live
+2022-03-24 14:20:25,946 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/output.log
+2022-03-24 14:20:25,946 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_created():217] file/dir created: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/events.out.tfevents.1648128025.pop-os.158575.0
+2022-03-24 14:20:26,546 INFO    Thread-14 :158634 [upload_job.py:push():137] Uploaded file /tmp/tmpgbyyc3g9wandb/33x2yzva-events.out.tfevents.1648128025.pop-os.158575.0
+2022-03-24 14:20:26,782 WARNING MainThread:158634 [internal.py:wandb_internal():155] Internal process interrupt: 1
+2022-03-24 14:20:26,800 DEBUG   SenderThread:158634 [sender.py:send():235] send: telemetry
+2022-03-24 14:20:26,801 DEBUG   HandlerThread:158634 [handler.py:handle_request():141] handle_request: partial_history
+2022-03-24 14:20:27,947 INFO    Thread-7  :158634 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/output.log
+2022-03-24 14:20:28,200 WARNING MainThread:158634 [internal.py:wandb_internal():155] Internal process interrupt: 2
+2022-03-24 14:20:28,200 ERROR   MainThread:158634 [internal.py:wandb_internal():158] Internal process interrupted.
+2022-03-24 14:20:29,171 INFO    WriterThread:158634 [datastore.py:close():281] close: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/run-1zeixc0l.wandb
+2022-03-24 14:20:29,171 INFO    SenderThread:158634 [sender.py:finish():1078] shutting down sender
+2022-03-24 14:20:29,171 INFO    SenderThread:158634 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-03-24 14:20:29,172 INFO    HandlerThread:158634 [handler.py:finish():778] shutting down handler
+2022-03-24 14:20:29,950 INFO    SenderThread:158634 [dir_watcher.py:finish():313] scan: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files
+2022-03-24 14:20:29,951 INFO    SenderThread:158634 [dir_watcher.py:finish():327] scan save: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/conda-environment.yaml conda-environment.yaml
+2022-03-24 14:20:29,951 INFO    SenderThread:158634 [dir_watcher.py:finish():327] scan save: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/wandb-summary.json wandb-summary.json
+2022-03-24 14:20:29,951 INFO    SenderThread:158634 [dir_watcher.py:finish():327] scan save: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/events.out.tfevents.1648128025.pop-os.158575.0 events.out.tfevents.1648128025.pop-os.158575.0
+2022-03-24 14:20:29,951 INFO    SenderThread:158634 [dir_watcher.py:finish():327] scan save: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/output.log output.log
+2022-03-24 14:20:29,955 INFO    SenderThread:158634 [dir_watcher.py:finish():327] scan save: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/requirements.txt requirements.txt
+2022-03-24 14:20:29,955 INFO    SenderThread:158634 [dir_watcher.py:finish():327] scan save: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/config.yaml config.yaml
+2022-03-24 14:20:29,957 INFO    SenderThread:158634 [dir_watcher.py:finish():327] scan save: /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/wandb-metadata.json wandb-metadata.json
+2022-03-24 14:20:29,957 INFO    SenderThread:158634 [file_pusher.py:finish():145] shutting down file pusher
+2022-03-24 14:20:29,958 INFO    SenderThread:158634 [file_pusher.py:join():150] waiting for file pusher
+2022-03-24 14:20:31,662 INFO    Thread-19 :158634 [upload_job.py:push():137] Uploaded file /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/config.yaml
+2022-03-24 14:20:31,666 INFO    Thread-15 :158634 [upload_job.py:push():137] Uploaded file /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/conda-environment.yaml
+2022-03-24 14:20:31,670 INFO    Thread-17 :158634 [upload_job.py:push():137] Uploaded file /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/output.log
+2022-03-24 14:20:31,675 INFO    Thread-16 :158634 [upload_job.py:push():137] Uploaded file /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/wandb-summary.json
+2022-03-24 14:20:31,678 INFO    Thread-18 :158634 [upload_job.py:push():137] Uploaded file /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_142013-1zeixc0l/files/requirements.txt
+2022-03-24 14:20:35,557 INFO    MainThread:158634 [internal.py:handle_exit():82] Internal process exited

@@ -1,0 +1,127 @@
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cuda device
+Wrapping the env in a VecTransposeImage.
+envs and model setup in 6.4207
+starting to learn
+-------------reset----------------
+-------------reset----------------
+Logging to runs/i17jyk46/test_1
+episode _FINISHED
+-------------reset----------------
+episode _FINISHED
+-------------reset----------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 400      |
+|    ep_rew_mean     | 0.237    |
+| time/              |          |
+|    fps             | 32       |
+|    iterations      | 1        |
+|    time_elapsed    | 24       |
+|    total_timesteps | 800      |
+---------------------------------
+training done
+episode _FINISHED
+-------------reset----------------
+episode _FINISHED
+-------------reset----------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 400         |
+|    ep_rew_mean          | 0.652       |
+| time/                   |             |
+|    fps                  | 29          |
+|    iterations           | 2           |
+|    time_elapsed         | 54          |
+|    total_timesteps      | 1600        |
+| train/                  |             |
+|    approx_kl            | 0.008286769 |
+|    clip_fraction        | 0.0916      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -9.92       |
+|    explained_variance   | 0.589       |
+|    learning_rate        | 0.0003      |
+|    loss                 | -0.0163     |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.00281    |
+|    std                  | 0.995       |
+|    value_loss           | 0.61        |
+-----------------------------------------
+training done
+Process ForkServerProcess-3:
+Process ForkServerProcess-2:
+Traceback (most recent call last):
+  File "test_train_model_idun_multi.py", line 102, in <module>
+    model.learn(total_timesteps = 200000, log_interval= 1, tb_log_name="test",)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 299, in learn
+    return super(PPO, self).learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 250, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 178, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 162, in step
+    return self.step_wait()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/vec_transpose.py", line 95, in step_wait
+    observations, rewards, dones, infos = self.venv.step_wait()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 120, in step_wait
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 120, in <listcomp>
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 29, in _worker
+    observation, reward, done, info = env.step(data)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/monitor.py", line 90, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/Desktop/rs_sb3/custom_gym_wrapper.py", line 112, in step
+    ob_dict, reward, done, info = self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/domain_randomization_wrapper.py", line 237, in step
+    return super().step(action)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 29, in _worker
+    observation, reward, done, info = env.step(data)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/wrapper.py", line 56, in step
+    return self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 405, in step
+    self._pre_action(action, policy_step)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/monitor.py", line 90, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 567, in _pre_action
+    robot.control(robot_action, policy_step=policy_step)
+  File "/home/ludvik/Desktop/rs_sb3/custom_gym_wrapper.py", line 112, in step
+    ob_dict, reward, done, info = self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/robots/single_arm.py", line 254, in control
+    torques = self.controller.run_controller()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/domain_randomization_wrapper.py", line 237, in step
+    return super().step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/controllers/osc.py", line 285, in run_controller
+    self.update()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/wrapper.py", line 56, in step
+    return self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/controllers/base_controller.py", line 152, in update
+    self.mass_matrix = mass_matrix[self.qvel_index, :][:, self.qvel_index]
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 412, in step
+    self._update_observables()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 335, in _update_observables
+    observable.update(timestep=self.model_timestep, obs_cache=self._obs_cache, force=force)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 225, in update
+    obs = np.array(self._filter(self._corrupter(self._sensor(obs_cache))))
+KeyboardInterrupt
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 398, in camera_rgb
+    img = self.sim.render(
+KeyboardInterrupt

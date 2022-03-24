@@ -26,7 +26,7 @@ def makeEnv():
   camera_h = 240
   camera_w = int(camera_h * height_vs_width_relattion)
 
-  controller_config = load_controller_config(default_controller="JOINT_POSITION")
+  controller_config = load_controller_config(default_controller="OSC_POSE")
 
   env = suite.make(
       camera_pos = pos,#(1.1124,-0.046,1.615),#(1.341772827,  -0.312295471 ,  0.182150085+1.5), 
@@ -60,14 +60,14 @@ def makeEnv():
       lighting_randomization_args=CUSTOM_LIGHTING_ARGS,
       dynamics_randomization_args=CUSTOM_DYNAMICS_ARGS,
       randomize_on_reset=True, randomize_every_n_steps=0)
-  env = CustomGymWrapper(env,['calibrated_camera_image','robot0_joint_pos'])
+  env = CustomGymWrapper(env,['calibrated_camera_image','robot0_eef_pos'])
   return env
 
     
 from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3.common.utils import set_random_seed
 from stable_baselines3.common.monitor import Monitor
-num_cpu = 24
+num_cpu = 2
 def make_env(rank, seed=0):
     """
     Utility function for multiprocessed env.

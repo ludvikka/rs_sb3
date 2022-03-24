@@ -17,3 +17,20 @@ config: {}
 2022-03-24 14:19:07,067 INFO    MainThread:158060 [wandb_run.py:_on_init():1759] communicating current version
 2022-03-24 14:19:07,242 INFO    MainThread:158060 [wandb_run.py:_on_init():1763] got version response 
 2022-03-24 14:19:07,242 INFO    MainThread:158060 [wandb_init.py:init():625] starting run threads in backend
+2022-03-24 14:19:10,293 INFO    MainThread:158060 [wandb_run.py:_console_start():1733] atexit reg
+2022-03-24 14:19:10,293 INFO    MainThread:158060 [wandb_run.py:_redirect():1606] redirect: SettingsConsole.REDIRECT
+2022-03-24 14:19:10,294 INFO    MainThread:158060 [wandb_run.py:_redirect():1611] Redirecting console.
+2022-03-24 14:19:10,295 INFO    MainThread:158060 [wandb_run.py:_redirect():1667] Redirects installed.
+2022-03-24 14:19:10,295 INFO    MainThread:158060 [wandb_init.py:init():664] run started, returning control to user process
+2022-03-24 14:19:18,707 INFO    MainThread:158060 [wandb_run.py:_tensorboard_callback():1095] tensorboard callback: runs/ej0zp1ts/test_1, None
+2022-03-24 14:19:56,550 INFO    MainThread:158060 [wandb_run.py:_atexit_cleanup():1702] got exitcode: 255
+2022-03-24 14:19:56,550 INFO    MainThread:158060 [wandb_run.py:_restore():1674] restore
+2022-03-24 14:19:58,882 INFO    MainThread:158060 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 848
+  total_bytes: 848
+}
+
