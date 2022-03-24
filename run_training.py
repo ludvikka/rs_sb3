@@ -24,11 +24,11 @@ def makeEnv(cfg):
     from custom_task import LiftSquareObject
     camera_w = int(cfg.ENV.CAMERA_VIEW_H * cfg.ENV.HWREL)
     env = suite.make(
-        camera_pos = cfg.ENV.CAMERA_POS,#(1.1124,-0.046,1.615),#(1.341772827,  -0.312295471 ,  0.182150085+1.5), 
-        camera_quat = cfg.ENV.CAMERA_QUAT,#(0.5608417987823486, 0.4306466281414032, 0.4306466579437256, 0.5608419179916382),# frontview quat
+        camera_pos = cfg.ENV.CAMERA_POS,
+        camera_quat = cfg.ENV.CAMERA_QUAT,
         camera_attribs = {'fovy': cfg.ENV.FOVY},
-        env_name='LiftSquareObject', # try with other tasks like "Stack" and "Door"
-        robots=cfg.ENV.ROBOTS,  # try with other robots like "Sawyer" and "Jaco"
+        env_name='LiftSquareObject', 
+        robots=cfg.ENV.ROBOTS, 
         gripper_types=cfg.ENV.GRIPPER_TYPES,
         has_renderer=cfg.ENV.HAS_RENDERER,
         has_offscreen_renderer= cfg.ENV.HAS_OFFSCREEN_RENDERER,
@@ -39,7 +39,7 @@ def makeEnv(cfg):
         camera_depths=cfg.ENV.CAMERA_DEPTHS,
         use_object_obs=cfg.ENV.USE_OBJECT_POS,
         controller_configs=load_controller_config(default_controller=cfg.ENV.CONTROLLER_TYPE),
-        control_freq = 20,
+        control_freq = cfg.,
         horizon = cfg.ENV.HORIZON,
         reward_shaping = cfg.ENV.REWARD_SHAPING,
         )
@@ -92,7 +92,7 @@ def run_training(cfg):
     print("starting to learn")
     tic = time.perf_counter()
     model.learn(total_timesteps = cfg.TOTAL_TIMESTEPS, log_interval= 1, tb_log_name="test",callback=callback)
-    
+    model.save(cfg.POLICYNAME)
     toc_2 = time.perf_counter()
     print(f"training done in  {toc_2 - tic:0.4f}")
     run.finish()

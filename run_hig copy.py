@@ -1,4 +1,4 @@
-from local_multi import run_training
+from run_training import run_training
 
 from yacs.config import CfgNode as CN
 
