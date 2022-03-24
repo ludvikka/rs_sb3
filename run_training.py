@@ -39,7 +39,7 @@ def makeEnv(cfg):
         camera_depths=cfg.ENV.CAMERA_DEPTHS,
         use_object_obs=cfg.ENV.USE_OBJECT_POS,
         controller_configs=load_controller_config(default_controller=cfg.ENV.CONTROLLER_TYPE),
-        control_freq = cfg.,
+        control_freq = cfg.CONTROL_FREQ,
         horizon = cfg.ENV.HORIZON,
         reward_shaping = cfg.ENV.REWARD_SHAPING,
         )
