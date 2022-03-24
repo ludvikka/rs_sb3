@@ -10,7 +10,7 @@ cfg.MODEL = CN()
 cfg.WANDB.NAME = "ppo_batch_testing"
 cfg.POLICYNAME = 'ppo_cf2'
 
-cfg.N_STEPS = 40000
+cfg.N_STEPS = 2000
 cfg.BATCH_SIZE = 50
 cfg.TOTAL_TIMESTEPS = 1000000
 
