@@ -1,0 +1,11 @@
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Traceback (most recent call last):
+  File "run_test.py", line 43, in <module>
+    run_training(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 88, in run_training
+    model = PPO('MultiInputPolicy', vec_gym_env, n_steps = cfg.MODEL.N_STEPS, verbose=2, batch_size=cfg.BATCH_SIZE, tensorboard_log=f"runs/{run.id}", device=cfg.DEVICE )
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/yacs/config.py", line 141, in __getattr__
+    raise AttributeError(name)
+AttributeError: N_STEPS

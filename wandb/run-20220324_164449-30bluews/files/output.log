@@ -1,0 +1,12 @@
+
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Traceback (most recent call last):
+  File "run_multiple_tests.py", line 6, in <module>
+    run_training(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 95, in run_training
+    print(f"envs and model setup in {toc_1 - tic:0.4f}")
+NameError: name 'toc_1' is not defined
+Using cpu device
+Wrapping the env in a VecTransposeImage.

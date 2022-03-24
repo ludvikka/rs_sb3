@@ -100,6 +100,7 @@ if __name__ == '__main__':
     print(f"envs and model setup in {toc_1 - tic:0.4f}")
     print("starting to learn")
     tic = time.perf_counter()
-    model.learn(total_timesteps = 400*3*8*5, log_interval= 1, tb_log_name="test",)
+    model.learn(total_timesteps = 400, log_interval= 1, tb_log_name="test",)
     toc_2 = time.perf_counter()
     print(f"training done in  {toc_2 - tic:0.4f}")
+    run.finish()

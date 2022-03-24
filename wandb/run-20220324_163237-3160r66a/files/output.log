@@ -1,0 +1,92 @@
+
+[0.6743090152740479, 0.21285612881183624, 0.21285581588745117, 0.6743084788322449]
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+envs and model setup in 6.1358
+starting to learn
+-------------reset----------------
+-------------reset----------------
+-------------reset----------------
+Logging to runs/3160r66a/test_1
+Process ForkServerProcess-3:
+Process ForkServerProcess-4:
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 27, in _worker
+    cmd, data = remote.recv()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 27, in _worker
+    cmd, data = remote.recv()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Process ForkServerProcess-2:
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 27, in _worker
+    cmd, data = remote.recv()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "run_multiple_tests.py", line 6, in <module>
+    run_training(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 103, in run_training
+    model.learn(total_timesteps = 400, log_interval= 1, tb_log_name="test",)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 299, in learn
+    return super(PPO, self).learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 250, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 169, in collect_rollouts
+    actions, values, log_probs = self.policy.forward(obs_tensor)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/policies.py", line 588, in forward
+    features = self.extract_features(obs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/policies.py", line 129, in extract_features
+    return self.features_extractor(preprocessed_obs)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/torch_layers.py", line 274, in forward
+    encoded_tensor_list.append(extractor(observations[key]))
+  File "/home/ludvik/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/torch_layers.py", line 93, in forward
+    return self.linear(self.cnn(observations))
+  File "/home/ludvik/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

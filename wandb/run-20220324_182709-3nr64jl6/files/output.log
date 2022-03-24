@@ -1,0 +1,30 @@
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+starting to learn
+-------------reset----------------
+-------------reset----------------
+-------------reset----------------
+Logging to runs/3nr64jl6/test_1
+Traceback (most recent call last):
+  File "run_hig.py", line 46, in <module>
+    run_training(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 93, in run_training
+    model.learn(total_timesteps = cfg.TOTAL_TIMESTEPS, log_interval= 1, tb_log_name="test",callback=callback)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 299, in learn
+    return super(PPO, self).learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 242, in learn
+    total_timesteps, callback = self._setup_learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/base_class.py", line 445, in _setup_learn
+    callback = self._init_callback(callback, eval_env, eval_freq, n_eval_episodes, log_path)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/base_class.py", line 381, in _init_callback
+    callback.init_callback(self)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/callbacks.py", line 48, in init_callback
+    self._init_callback()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/wandb/integration/sb3/sb3.py", line 111, in _init_callback
+    wandb.config.setdefaults(d)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/yacs/config.py", line 141, in __getattr__
+    raise AttributeError(name)
+AttributeError: setdefaults

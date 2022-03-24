@@ -1,0 +1,51 @@
+Traceback (most recent call last):
+  File "run_multiple_tests.py", line 10, in <module>
+    run_training(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 91, in run_training
+    model.learn(total_timesteps = 40, log_interval= 1, tb_log_name="test",callback=callback)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 299, in learn
+    return super(PPO, self).learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 242, in learn
+    total_timesteps, callback = self._setup_learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/base_class.py", line 429, in _setup_learn
+    self._last_obs = self.env.reset()  # pytype: disable=annotation-type-mismatch
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/vec_transpose.py", line 110, in reset
+    return self.transpose_observations(self.venv.reset())
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 133, in reset
+    obs = [remote.recv() for remote in self.remotes]
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 133, in <listcomp>
+    obs = [remote.recv() for remote in self.remotes]
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 383, in _recv
+    raise EOFError
+EOFError
+Traceback (most recent call last):
+  File "run_multiple_tests.py", line 10, in <module>
+    run_training(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 91, in run_training
+    model.learn(total_timesteps = 40, log_interval= 1, tb_log_name="test",callback=callback)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 299, in learn
+    return super(PPO, self).learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 242, in learn
+    total_timesteps, callback = self._setup_learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/base_class.py", line 429, in _setup_learn
+    self._last_obs = self.env.reset()  # pytype: disable=annotation-type-mismatch
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/vec_transpose.py", line 110, in reset
+    return self.transpose_observations(self.venv.reset())
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 133, in reset
+    obs = [remote.recv() for remote in self.remotes]
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 133, in <listcomp>
+    obs = [remote.recv() for remote in self.remotes]
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 383, in _recv
+    raise EOFError
+EOFError
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+starting to learn

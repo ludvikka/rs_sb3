@@ -103,3 +103,4 @@ if __name__ == '__main__':
     toc_2 = time.perf_counter()
     print(f"training done in  {toc_2 - tic:0.4f}")
     model.save('trained_models/' + "1")
+    run.finish()

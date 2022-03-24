@@ -1,0 +1,61 @@
+
+[0.6743090152740479, 0.21285612881183624, 0.21285581588745117, 0.6743084788322449]
+Process ForkServerProcess-3:
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 24, in _worker
+    env = env_fn_wrapper.var()
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 79, in _init
+    env = makeEnv(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 34, in makeEnv
+    camera_pos = cfg.ENV.CAMERA_POS,#(1.1124,-0.046,1.615),#(1.341772827,  -0.312295471 ,  0.182150085+1.5),
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/yacs/config.py", line 141, in __getattr__
+    raise AttributeError(name)
+AttributeError: ENV
+Process ForkServerProcess-2:
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 24, in _worker
+    env = env_fn_wrapper.var()
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 79, in _init
+    env = makeEnv(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 34, in makeEnv
+    camera_pos = cfg.ENV.CAMERA_POS,#(1.1124,-0.046,1.615),#(1.341772827,  -0.312295471 ,  0.182150085+1.5),
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/yacs/config.py", line 141, in __getattr__
+    raise AttributeError(name)
+AttributeError: ENV
+Traceback (most recent call last):
+  File "run_multiple_tests.py", line 6, in <module>
+    run_training(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 95, in run_training
+    vec_gym_env = SubprocVecEnv([make_env(i , cfg.ENV) for i in range(num_cpu)])
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 111, in __init__
+    observation_space, action_space = self.remotes[0].recv()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Process ForkServerProcess-4:
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 24, in _worker
+    env = env_fn_wrapper.var()
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 79, in _init
+    env = makeEnv(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 34, in makeEnv
+    camera_pos = cfg.ENV.CAMERA_POS,#(1.1124,-0.046,1.615),#(1.341772827,  -0.312295471 ,  0.182150085+1.5),
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/yacs/config.py", line 141, in __getattr__
+    raise AttributeError(name)
+AttributeError: ENV

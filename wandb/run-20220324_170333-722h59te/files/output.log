@@ -1,0 +1,137 @@
+Process ForkServerProcess-3:
+Traceback (most recent call last):
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 366, in _check_sensor_validity
+    self._data_shape = np.array(self._sensor({})).shape
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 398, in camera_rgb
+    img = self.sim.render(
+  File ".local/lib/python3.8/site-packages/mujoco_py/mjsim.pyx", line 153, in mujoco_py.cymj.MjSim.render
+  File ".local/lib/python3.8/site-packages/mujoco_py/generated/wrappers.pxi", line 1070, in mujoco_py.cymj.PyMjModel.camera_name2id
+TypeError: unhashable type: 'list'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 24, in _worker
+    env = env_fn_wrapper.var()
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 72, in _init
+    env = makeEnv(cfg)
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 26, in makeEnv
+    env = suite.make(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 39, in make
+    return REGISTERED_ENVS[env_name](*args, **kwargs)
+  File "/home/ludvik/Desktop/rs_sb3/custom_task.py", line 193, in __init__
+    super().__init__(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/manipulation/manipulation_env.py", line 162, in __init__
+    super().__init__(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 213, in __init__
+    super().__init__(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 150, in __init__
+    self._observables = self._setup_observables()
+  File "/home/ludvik/Desktop/rs_sb3/custom_task.py", line 336, in _setup_observables
+    observables = super()._setup_observables()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 355, in _setup_observables
+    observables[name] = Observable(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 198, in __init__
+    self._check_sensor_validity()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 369, in _check_sensor_validity
+    raise ValueError("Current sensor for observable {} is invalid.".format(self.name))
+ValueError: Current sensor for observable ['calibrated_camera']_image is invalid.
+Process ForkServerProcess-4:
+Traceback (most recent call last):
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 366, in _check_sensor_validity
+    self._data_shape = np.array(self._sensor({})).shape
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 398, in camera_rgb
+    img = self.sim.render(
+  File ".local/lib/python3.8/site-packages/mujoco_py/mjsim.pyx", line 153, in mujoco_py.cymj.MjSim.render
+  File ".local/lib/python3.8/site-packages/mujoco_py/generated/wrappers.pxi", line 1070, in mujoco_py.cymj.PyMjModel.camera_name2id
+TypeError: unhashable type: 'list'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 24, in _worker
+    env = env_fn_wrapper.var()
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 72, in _init
+    env = makeEnv(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 26, in makeEnv
+    env = suite.make(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 39, in make
+    return REGISTERED_ENVS[env_name](*args, **kwargs)
+  File "/home/ludvik/Desktop/rs_sb3/custom_task.py", line 193, in __init__
+    super().__init__(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/manipulation/manipulation_env.py", line 162, in __init__
+    super().__init__(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 213, in __init__
+    super().__init__(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 150, in __init__
+    self._observables = self._setup_observables()
+  File "/home/ludvik/Desktop/rs_sb3/custom_task.py", line 336, in _setup_observables
+    observables = super()._setup_observables()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 355, in _setup_observables
+    observables[name] = Observable(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 198, in __init__
+    self._check_sensor_validity()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 369, in _check_sensor_validity
+    raise ValueError("Current sensor for observable {} is invalid.".format(self.name))
+ValueError: Current sensor for observable ['calibrated_camera']_image is invalid.
+Process ForkServerProcess-2:
+Traceback (most recent call last):
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 366, in _check_sensor_validity
+    self._data_shape = np.array(self._sensor({})).shape
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 398, in camera_rgb
+    img = self.sim.render(
+  File ".local/lib/python3.8/site-packages/mujoco_py/mjsim.pyx", line 153, in mujoco_py.cymj.MjSim.render
+  File ".local/lib/python3.8/site-packages/mujoco_py/generated/wrappers.pxi", line 1070, in mujoco_py.cymj.PyMjModel.camera_name2id
+TypeError: unhashable type: 'list'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 24, in _worker
+    env = env_fn_wrapper.var()
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 72, in _init
+    env = makeEnv(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 26, in makeEnv
+    env = suite.make(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 39, in make
+    return REGISTERED_ENVS[env_name](*args, **kwargs)
+  File "/home/ludvik/Desktop/rs_sb3/custom_task.py", line 193, in __init__
+    super().__init__(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/manipulation/manipulation_env.py", line 162, in __init__
+    super().__init__(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 213, in __init__
+    super().__init__(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 150, in __init__
+    self._observables = self._setup_observables()
+  File "/home/ludvik/Desktop/rs_sb3/custom_task.py", line 336, in _setup_observables
+    observables = super()._setup_observables()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 355, in _setup_observables
+    observables[name] = Observable(
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 198, in __init__
+    self._check_sensor_validity()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/utils/observables.py", line 369, in _check_sensor_validity
+    raise ValueError("Current sensor for observable {} is invalid.".format(self.name))
+ValueError: Current sensor for observable ['calibrated_camera']_image is invalid.
+Traceback (most recent call last):
+  File "run_multiple_tests.py", line 6, in <module>
+    run_training(cfg)
+  File "/home/ludvik/Desktop/rs_sb3/local_multi.py", line 85, in run_training
+    vec_gym_env = SubprocVecEnv([make_env(i , cfg) for i in range(num_cpu)])
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 111, in __init__
+    observation_space, action_space = self.remotes[0].recv()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer

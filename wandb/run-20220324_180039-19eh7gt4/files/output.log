@@ -1,0 +1,19 @@
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+starting to learn
+-------------reset----------------
+-------------reset----------------
+-------------reset----------------
+Logging to runs/19eh7gt4/test_1
+---------------------------
+| time/              |    |
+|    fps             | 18 |
+|    iterations      | 1  |
+|    time_elapsed    | 3  |
+|    total_timesteps | 60 |
+---------------------------
+training done
+training done in  11.9920

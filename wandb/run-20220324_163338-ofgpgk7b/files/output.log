@@ -1,0 +1,31 @@
+
+[0.6743090152740479, 0.21285612881183624, 0.21285581588745117, 0.6743084788322449]
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+envs and model setup in 6.0592
+starting to learn
+-------------reset----------------
+-------------reset----------------
+-------------reset----------------
+Logging to runs/ofgpgk7b/test_1
+episode _FINISHED
+-------------reset----------------
+episode _FINISHED
+-------------reset----------------
+episode _FINISHED
+-------------reset----------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 20       |
+|    ep_rew_mean     | 0.0449   |
+| time/              |          |
+|    fps             | 11       |
+|    iterations      | 1        |
+|    time_elapsed    | 5        |
+|    total_timesteps | 60       |
+---------------------------------
+training done
+training done in  12.6617

@@ -1,0 +1,28 @@
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+starting to learn
+-------------reset----------------
+-------------reset----------------
+-------------reset----------------
+Logging to runs/2npq7n1j/test_1
+episode _FINISHED
+-------------reset----------------
+episode _FINISHED
+-------------reset----------------
+episode _FINISHED
+-------------reset----------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 20       |
+|    ep_rew_mean     | 0.0449   |
+| time/              |          |
+|    fps             | 11       |
+|    iterations      | 1        |
+|    time_elapsed    | 5        |
+|    total_timesteps | 60       |
+---------------------------------
+training done
+training done in  14.4027
