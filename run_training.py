@@ -92,7 +92,7 @@ def run_training(cfg):
     print("starting to learn")
     tic = time.perf_counter()
     model.learn(total_timesteps = cfg.TOTAL_TIMESTEPS, log_interval= 1, tb_log_name="test",callback=callback)
-    model.save(cfg.POLICYNAME)
+    model.save("trained_models/" + cfg.POLICYNAME)
     toc_2 = time.perf_counter()
     print(f"training done in  {toc_2 - tic:0.4f}")
     run.finish()
