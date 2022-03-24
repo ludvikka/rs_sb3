@@ -8,7 +8,7 @@ cfg.ENV = CN()
 cfg.WANDB = CN()
 cfg.MODEL = CN()
 cfg.WANDB.NAME = "ppo_batch_testing"
-cfg.POLICYNAME = 'ppo_400h'
+cfg.POLICYNAME = 'ppo_1600h'
 
 cfg.N_STEPS = 1600
 cfg.BATCH_SIZE = 50
