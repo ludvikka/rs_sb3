@@ -1,0 +1,384 @@
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+envs and model setup in 5.6383
+starting to learn
+-------------reset----------------
+-------------reset----------------
+-------------reset----------------
+Logging to runs/31et1k21/test_1
+1.309693032411106
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.3204800950905107
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.3420121024030862
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.344307270985333
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.2740979836290829
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.2988788325684937
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.2144802112880677
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.2525226652272132
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.3225282061734145
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.276686320858787
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.1308822082904113
+0.8
+1.1814328895469328
+0.8
+1.2068015341063303
+0.8
+Sucsessful grasp
+rewarded for sucsess
+1.0233635176849092
+1.085636595559678
+0.8
+0.8
+1.1128972849380525
+0.8
+0.9651921747541081
+0.8
+0.892000563623051
+0.8
+0.8214893610402192
+0.8
+0.9950034323080724
+0.8
+0.7996579731508341
+0.8
+0.8531713053763581
+0.8
+0.8099722673430539
+0.8
+0.8106592150536754
+0.8
+0.8161363859406384
+0.8
+0.8167480633369294
+0.8
+0.8065180250769275
+0.8
+0.8189271220293093
+0.8
+0.819105255133918
+0.8
+0.8133384314313985
+0.8
+0.8200963801737712
+0.8
+0.8165436044804539
+0.8201684692547783
+0.8
+0.8
+0.8206489993800722
+0.8
+0.820496644225366
+0.8
+0.817948303363255
+0.8
+0.8206319014950728
+0.8
+0.8208369958835261
+0.8
+0.8185268346794261
+0.8
+0.8206837374618088
+0.8
+0.8209185639998021
+0.8
+0.8187605158254029
+0.8
+0.8188619117149974
+0.8
+0.8209554814573625
+0.8
+0.8207061924890043
+0.8
+0.8209724733642865
+0.8
+0.8189076396062818
+0.8
+0.8207164248876463
+0.8
+0.8209803511094143
+0.8
+0.818928587442635
+0.8
+0.8207211920316503
+0.8
+0.8209840152870387
+0.8
+0.8189382488546417
+0.8
+0.8207234356986425
+0.8
+0.820985722130301
+0.8
+0.818942718408327
+0.8
+0.8207244966655501
+0.8
+0.8207249993836324
+0.8
+0.8209865177139634
+0.8
+0.8189447889585906
+0.8
+0.8209868886193439
+0.8
+0.8207252377050687
+0.8
+0.8189457487285537
+0.8
+0.8207253505980848
+0.8
+0.8209870615193252
+0.8189461937016815
+0.8
+0.8
+0.820725403940977
+0.8
+0.8209871420793993
+0.8
+0.8189463999851221
+0.8
+0.8189464955756851
+0.8
+0.8207254289998632
+0.8
+0.8209871795722964
+0.8
+0.8209871969777734
+0.8
+0.8189465398252588
+0.8
+0.8207254406222361
+0.8
+0.8209872050138544
+0.8
+0.8207254458529203
+0.8
+0.8189465602460305
+0.8
+0.8207254480196876
+0.8
+0.8189465696106623
+0.8
+0.8209872086797125
+0.8
+0.8209872103071324
+0.8
+0.8207254487298689
+0.8
+0.8189465738474199
+0.8
+0.8209872109837445
+0.8
+0.8189465757058605
+0.8
+0.8207254487497605
+0.8
+0.8209872112168619
+0.8
+0.8207254484425324
+0.8
+0.8189465764612315
+0.8
+0.8209872112431158
+0.8
+0.8207254479802869
+0.8
+0.8189465767049952
+0.8
+0.8209872111728802
+0.8
+0.8207254474445805
+0.8
+0.8189465767114738
+0.8
+0.820987211057638
+0.8
+0.8207254468740616
+0.8
+0.8189465766078986
+0.8
+0.8209872109214028
+0.8
+0.8207254462870459
+0.8
+0.8189465764532804
+0.8
+0.820987210775376
+0.8
+0.8189465762749881
+0.8
+0.8207254456922124
+0.8
+0.8209872106247816
+0.8
+0.8207254450936742
+0.8
+0.8189465760857161
+0.8
+0.820987210472057
+0.8
+0.8207254444933804
+0.8
+0.8189465758913513
+0.8
+0.8209872103183389
+0.8
+0.8189465756946243
+0.8
+0.8207254438922544
+0.8
+0.8209872101641569
+0.8
+0.820725443290734
+0.8
+0.8189465754968019
+0.8
+0.8189465752984711
+0.8
+0.820987210009759
+0.8
+0.820725442689027
+0.8
+0.818946575099905
+0.8
+0.8209872098552601
+0.8
+0.8207254420872314
+0.8
+0.820725441485394
+0.8
+0.8209872097007143
+0.8
+0.8189465749012297
+0.8
+0.8207254408835366
+0.8
+0.8209872095461463
+0.8
+0.8189465747025036
+0.8
+0.8207254402816698
+0.8
+0.8209872093915682
+0.8
+0.8189465745037541
+0.8
+0.8207254396797988
+0.8
+0.8189465743049934
+0.8
+0.8209872092369852
+0.8
+0.8209872090824005
+0.8
+0.8207254390779248
+0.8
+0.818946574106228
+0.8
+snøtiss
+0.8207254386927254
+0.8
+episode _FINISHED
+-------------reset----------------
+Process ForkServerProcess-2:
+Process ForkServerProcess-4:
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 29, in _worker
+    observation, reward, done, info = env.step(data)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/monitor.py", line 90, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/ludvik/Desktop/rs_sb3/custom_gym_wrapper.py", line 112, in step
+    ob_dict, reward, done, info = self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/domain_randomization_wrapper.py", line 237, in step
+    return super().step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/wrapper.py", line 56, in step
+    return self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 404, in step
+    self.sim.forward()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "test_train_model_local_multi.py", line 103, in <module>
+    model.learn(total_timesteps = 400*3*8*5, log_interval= 1, tb_log_name="test",)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 299, in learn
+    return super(PPO, self).learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 250, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 178, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 162, in step
+    return self.step_wait()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/vec_transpose.py", line 95, in step_wait
+    observations, rewards, dones, infos = self.venv.step_wait()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 120, in step_wait
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 120, in <listcomp>
+    results = [remote.recv() for remote in self.remotes]
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 29, in _worker
+    observation, reward, done, info = env.step(data)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/monitor.py", line 90, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/ludvik/Desktop/rs_sb3/custom_gym_wrapper.py", line 112, in step
+    ob_dict, reward, done, info = self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/domain_randomization_wrapper.py", line 237, in step
+    return super().step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/wrapper.py", line 56, in step
+    return self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 405, in step
+    self._pre_action(action, policy_step)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 566, in _pre_action
+    robot_action = action[cutoff:cutoff+robot.action_dim]
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/robots/robot.py", line 304, in action_dim
+    return self.action_limits[0].shape[0]
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/robots/single_arm.py", line 355, in action_limits
+    low_c, high_c = self.controller.control_limits
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/controllers/joint_pos.py", line 277, in control_limits
+    if self.impedance_mode == "variable":
+KeyboardInterrupt

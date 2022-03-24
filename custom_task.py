@@ -238,6 +238,7 @@ class LiftSquareObject(SingleArmEnv):
 
         # sparse completion reward
         if self._check_success():
+            print("sucsseful grasp")
             reward = 2.25
 
         # use a shaping reward
@@ -304,7 +305,7 @@ class LiftSquareObject(SingleArmEnv):
                 ensure_object_boundary_in_range=False,
                 ensure_valid_placement=True,
                 reference_pos=self.table_offset,
-                z_offset=0.5,
+                z_offset=0.01,
             )
         self.target = self.objects[0]
 
@@ -417,6 +418,4 @@ class LiftSquareObject(SingleArmEnv):
         table_height = self.model.mujoco_arena.table_offset[2]
 
         # cube is higher than the table top above a margin
-        if object_height > table_height + 0.04:
-            print("Sucsessful grasp")
         return object_height > table_height + 0.04

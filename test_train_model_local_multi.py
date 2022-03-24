@@ -65,7 +65,7 @@ def makeEnv():
   return env
 
     
-from stable_baselines3.common.vec_env import SubprocVecEnv,
+from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3.common.utils import set_random_seed
 from stable_baselines3.common.monitor import Monitor
 num_cpu = 3

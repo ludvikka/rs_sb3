@@ -1,0 +1,492 @@
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+envs and model setup in 5.8939
+starting to learn
+-------------reset----------------
+-------------reset----------------
+-------------reset----------------
+Logging to runs/3mv2t18x/test_1
+0.8198529783113383
+0.8
+0.819557975294866
+0.8
+0.8204141727759258
+0.8
+0.8185734996006601
+0.8
+0.8176367883841066
+0.8
+0.8196322726791526
+0.8
+0.820754525441796
+0.8
+0.8199705821971741
+0.8
+0.8190472922548734
+0.8
+0.8205462560834873
+0.8
+0.8211983104149816
+0.8
+0.8196464693613693
+0.8
+0.8207668665828146
+0.8
+0.8198883386012455
+0.8
+0.8213667192678221
+0.8
+0.8208613392978528
+0.8
+0.8199936033834171
+0.8
+0.821439248000307
+0.8
+0.820903884477529
+0.8
+0.8200411251794298
+0.8
+0.8214722404259543
+0.8
+0.8209234260418387
+0.8
+0.8200629028389091
+0.8
+0.8214875887194076
+0.8
+0.8209324775692313
+0.8
+0.8214947999411221
+0.8
+0.820072948263789
+0.8
+0.8209366859757937
+0.8
+0.8200775955982821
+0.8
+0.8214982033937052
+0.8
+0.8200797484706664
+0.8
+0.8214998129886734
+0.8
+0.820938645973465
+0.8
+0.8215005748314955
+0.8
+0.820080746363714
+0.8
+0.8209395595072084
+0.8
+0.8215009354446415
+0.8
+0.8200812089907257
+0.8
+0.8209399854156834
+0.8
+0.821501106010219
+0.8
+0.8209401839673393
+0.8
+0.8200814234288923
+0.8
+0.8215011865087712
+0.8
+0.8209402764922396
+0.8200815227678665
+0.8
+0.8
+0.8215012243298561
+0.8
+0.8209403195670782
+0.8
+0.8200815687275471
+0.8
+0.8200815899306323
+0.8
+0.8209403395775283
+0.8
+0.8215012419279792
+0.8
+0.821501249943006
+0.8
+0.820081599651719
+0.8
+0.8209403488300617
+0.8
+0.821501253416795
+0.8
+0.8209403530647228
+0.8
+0.8200816040474577
+0.8
+0.8209403549588578
+0.8
+0.8200816059732914
+0.8
+0.8215012547385658
+0.8
+0.8215012550405267
+0.8
+0.8200816067535762
+0.8
+0.82094035576128
+0.8
+0.8215012548592138
+0.8
+0.820940356054484
+0.8
+0.8200816070025524
+0.8
+0.8215012544488836
+0.8
+0.8209403561101685
+0.8
+0.8200816070051059
+0.8
+0.8215012478518937
+0.8
+0.8209403546201278
+0.8
+0.82008160487285
+0.8
+0.8215012472353068
+0.8
+0.8209403544681934
+0.8
+0.8200816046622719
+0.8
+0.8209403543162473
+0.8
+0.8215012466187062
+0.8
+0.8200816044516825
+0.8
+0.8209403541642956
+0.8
+0.820081604241088
+0.8
+0.8215012460020987
+0.8
+0.8209403540123418
+0.8
+0.8215012453854884
+0.8
+0.8200816040304907
+0.8
+0.8209403538603856
+0.8
+0.8215012447688761
+0.8
+0.8200816038198925
+0.8
+0.8215012441522638
+0.8
+0.8200816036092943
+0.8
+0.8209403537084293
+0.8
+0.8200816033986961
+0.8
+0.8215012435356515
+0.8
+0.8209403535564731
+0.8
+0.8215012429190387
+0.8
+0.820081603188097
+0.8
+0.8209403534045169
+0.8
+0.8215012423024255
+0.8
+0.8200816029774979
+0.8
+0.8209403532525607
+0.8
+0.8209403531006044
+0.8
+0.8215012416858123
+0.8
+0.8200816027668987
+0.8
+0.8215012410691991
+0.8
+0.8209403529486482
+0.8
+0.8200816025562996
+0.8
+0.8215012404525859
+0.8
+0.820940352796692
+0.8
+0.8200816023457004
+0.8
+0.8200816021351013
+0.8
+0.8209403526447357
+0.8
+0.8215012398359726
+0.8
+0.8200816019245022
+0.8
+0.8215012392193594
+0.8
+0.8209403524927795
+0.8
+0.8209403523408233
+0.8
+0.8215012386027462
+0.8
+0.820081601713903
+0.8
+0.8209403521888671
+0.8
+0.8200816015033039
+0.8
+0.821501237986133
+0.8
+0.8200816012927047
+0.8
+0.8209403520369108
+0.8
+0.8215012373695196
+0.8
+0.8209403518849546
+0.8
+0.8200816010821057
+0.8215012367529064
+0.8
+0.8
+0.8209403517329984
+0.8
+0.8215012361362932
+0.8
+0.8200816008715065
+0.8
+0.8200816006609074
+0.8
+0.8209403515810422
+0.8
+0.82150123551968
+0.8
+0.8215012349030667
+0.8
+0.820940351429086
+0.8
+0.8200816004503082
+0.8
+0.8209403512771297
+0.8
+0.8215012342864535
+0.8
+0.8200816002397091
+0.8
+0.8215012336698403
+0.8
+0.8209403511251735
+0.8
+0.8200816000291099
+0.8
+0.8209403509732173
+0.8
+0.8200815998185108
+0.8
+0.8215012330532271
+0.8
+0.8200815996079117
+0.8
+0.8215012324366139
+0.8
+0.820940350821261
+0.8
+0.8209403506693048
+0.8
+0.8215012318200006
+0.8
+0.8200815993973125
+0.8
+0.8215012312033874
+0.8
+0.8200815991867133
+0.8
+0.8209403505173486
+0.8
+Process ForkServerProcess-4:
+Process ForkServerProcess-3:
+Process ForkServerProcess-2:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 27, in _worker
+    cmd, data = remote.recv()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "test_train_model_local_multi.py", line 103, in <module>
+    model.learn(total_timesteps = 400*3*8*5, log_interval= 1, tb_log_name="test",)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 299, in learn
+    return super(PPO, self).learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 250, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 178, in collect_rollouts
+    new_obs, rewards, dones, infos = env.step(clipped_actions)
+KeyboardInterrupt
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 162, in step
+    return self.step_wait()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/vec_transpose.py", line 95, in step_wait
+    observations, rewards, dones, infos = self.venv.step_wait()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 120, in step_wait
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 120, in <listcomp>
+    results = [remote.recv() for remote in self.remotes]
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 29, in _worker
+    observation, reward, done, info = env.step(data)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 29, in _worker
+    observation, reward, done, info = env.step(data)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/monitor.py", line 90, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/ludvik/Desktop/rs_sb3/custom_gym_wrapper.py", line 112, in step
+    ob_dict, reward, done, info = self.env.step(action)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/monitor.py", line 90, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/domain_randomization_wrapper.py", line 237, in step
+    return super().step(action)
+  File "/home/ludvik/Desktop/rs_sb3/custom_gym_wrapper.py", line 112, in step
+    ob_dict, reward, done, info = self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/wrapper.py", line 56, in step
+    return self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/domain_randomization_wrapper.py", line 237, in step
+    return super().step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 405, in step
+    self._pre_action(action, policy_step)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 567, in _pre_action
+    robot.control(robot_action, policy_step=policy_step)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/wrappers/wrapper.py", line 56, in step
+    return self.env.step(action)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/robots/single_arm.py", line 254, in control
+    torques = self.controller.run_controller()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/controllers/joint_pos.py", line 221, in run_controller
+    self.update()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/controllers/base_controller.py", line 145, in update
+    self.J_pos = np.array(self.sim.data.get_site_jacp(self.eef_name).reshape((3, -1))[:, self.qvel_index])
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/base.py", line 405, in step
+    self._pre_action(action, policy_step)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/environments/robot_env.py", line 567, in _pre_action
+    robot.control(robot_action, policy_step=policy_step)
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/robots/single_arm.py", line 254, in control
+    torques = self.controller.run_controller()
+KeyboardInterrupt
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/controllers/joint_pos.py", line 221, in run_controller
+    self.update()
+  File "/home/ludvik/.local/lib/python3.8/site-packages/robosuite/controllers/base_controller.py", line 145, in update
+    self.J_pos = np.array(self.sim.data.get_site_jacp(self.eef_name).reshape((3, -1))[:, self.qvel_index])
+KeyboardInterrupt
+0.8215012275037079
+0.8
+0.8200815977125194
+0.8
+0.8209403494536549
+0.8
+0.8215012268870947
+0.8
+0.8209403493016986
+0.8
+0.8215012262704815
+0.8
+0.8200815975019203
+0.8
+0.8209403491497422
+0.8
+0.8200815972913211
+0.8
+0.8215012256538683
+0.8
+0.8209403489977858
+0.8
+0.821501225037255
+0.8
+0.820081597080722
+0.8
+0.8200815968701228
+0.8
+0.8209403488458294
+0.8
+0.8215012244206418
+0.8
+0.8209403486938731
+0.8
+0.8200815966595238
+0.8
+0.8215012238040286
+0.8
+0.8200815964489246
+0.8
+0.8209403485419168
+0.8
+0.8215012231874154
+0.8
+0.8209403483899604
+0.8
+0.8215012225708022
+0.8
+0.8200815962383254
+0.8
+0.8200815960277263
+0.8
+0.8209403482380041
+0.8
+0.821501221954189
+0.8
+0.8200815958171271
+0.8
+0.8209403480860478
+0.8
+0.8215012213375756
+0.8
+0.8200815956065282
+0.8
+0.8209403479340913
+0.8
+0.8215012207209624
+0.8
+0.820940347782135
+0.8
+0.8215012201043491
+0.8
+0.820081595395929
+0.8
+0.8200815951853297
+0.8
+0.821501219487736
+0.8
+0.8209403476301786
+0.8
+0.8209403474782223
+0.8
