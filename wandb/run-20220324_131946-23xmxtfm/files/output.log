@@ -1,0 +1,90 @@
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+envs and model setup in 5.4726
+starting to learn
+-------------reset----------------
+-------------reset----------------
+-------------reset----------------
+Logging to ./ppo_lift_4_objects_tensorboard/test_41
+episode _FINISHED
+-------------reset----------------
+episode _FINISHED
+episode _FINISHED
+-------------reset----------------
+-------------reset----------------
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 400      |
+|    ep_rew_mean     | 6.86     |
+| time/              |          |
+|    fps             | 63       |
+|    iterations      | 1        |
+|    time_elapsed    | 19       |
+|    total_timesteps | 1200     |
+---------------------------------
+Process ForkServerProcess-4:
+Process ForkServerProcess-3:
+Process ForkServerProcess-2:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 27, in _worker
+    cmd, data = remote.recv()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 27, in _worker
+    cmd, data = remote.recv()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py", line 27, in _worker
+    cmd, data = remote.recv()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "test_train_model_local_multi.py", line 100, in <module>
+    model.learn(total_timesteps = 400*3*8*5, log_interval= 1, tb_log_name="test",)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 299, in learn
+    return super(PPO, self).learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 270, in learn
+    self.train()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 199, in train
+    values, log_prob, entropy = self.policy.evaluate_actions(rollout_data.observations, actions)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/policies.py", line 643, in evaluate_actions
+    features = self.extract_features(obs)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/policies.py", line 128, in extract_features
+    preprocessed_obs = preprocess_obs(obs, self.observation_space, normalize_images=self.normalize_images)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/preprocessing.py", line 128, in preprocess_obs
+    preprocessed_obs[key] = preprocess_obs(_obs, observation_space[key], normalize_images=normalize_images)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/preprocessing.py", line 104, in preprocess_obs
+    return obs.float() / 255.0
+KeyboardInterrupt

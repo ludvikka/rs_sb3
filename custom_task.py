@@ -417,4 +417,6 @@ class LiftSquareObject(SingleArmEnv):
         table_height = self.model.mujoco_arena.table_offset[2]
 
         # cube is higher than the table top above a margin
+        if object_height > table_height + 0.04:
+            print("Sucsessful grasp")
         return object_height > table_height + 0.04

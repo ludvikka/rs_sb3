@@ -1,0 +1,28 @@
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Found 4 GPUs for rendering. Using device 0.
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+envs and model setup in 5.5519
+starting to learn
+-------------reset----------------
+-------------reset----------------
+-------------reset----------------
+Traceback (most recent call last):
+  File "test_train_model_local_multi.py", line 106, in <module>
+    model.learn(total_timesteps = 400*3*8*5, log_interval= 1, tb_log_name="test",)
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/ppo/ppo.py", line 299, in learn
+    return super(PPO, self).learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 242, in learn
+    total_timesteps, callback = self._setup_learn(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/base_class.py", line 429, in _setup_learn
+    self._last_obs = self.env.reset()  # pytype: disable=annotation-type-mismatch
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/vec_transpose.py", line 110, in reset
+    return self.transpose_observations(self.venv.reset())
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/vec_video_recorder.py", line 68, in reset
+    self.start_video_recorder()
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/stable_baselines3/common/vec_env/vec_video_recorder.py", line 76, in start_video_recorder
+    self.video_recorder = video_recorder.VideoRecorder(
+  File "/home/ludvik/anaconda3/envs/RS_SB3_test/lib/python3.8/site-packages/gym/wrappers/monitoring/video_recorder.py", line 37, in __init__
+    modes = env.metadata.get("render.modes", [])
+AttributeError: 'NoneType' object has no attribute 'get'

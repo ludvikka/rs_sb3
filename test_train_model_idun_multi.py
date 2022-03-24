@@ -1,4 +1,3 @@
-
 import robosuite as suite
 
 from objects import LemonObject, BreadObject, BoxObject
@@ -17,6 +16,8 @@ from robosuite.wrappers import DomainRandomizationWrapper
 
 from stable_baselines3 import PPO
 
+from wandb.integration.sb3 import WandbCallback
+import wandb
 def makeEnv():
   camera_quat = [0.6743090152740479, 0.21285612881183624, 0.21285581588745117, 0.6743084788322449]
   pos = [0.626,0,1.6815]
@@ -66,7 +67,6 @@ def makeEnv():
 from stable_baselines3.common.vec_env import SubprocVecEnv
 from stable_baselines3.common.utils import set_random_seed
 from stable_baselines3.common.monitor import Monitor
-
 num_cpu = 24
 def make_env(rank, seed=0):
     """
@@ -79,22 +79,26 @@ def make_env(rank, seed=0):
     """
     def _init():
         env = makeEnv()
-        env.seed(seed + rank)
         env = Monitor(env)
+        env.seed(seed + rank)
         return env
     set_random_seed(seed)
     return _init
 
 if __name__ == '__main__':
-  tic = time.perf_counter()
-  vec_gym_env = SubprocVecEnv([make_env(i) for i in range(num_cpu)])
-  toc_1 = time.perf_counter()
+    run = wandb.init(project="my-test-project", 
+                    entity="ludvikka",
+                    sync_tensorboard=True,)
+    callback=WandbCallback(verbose =2)
+    tic = time.perf_counter()
+    vec_gym_env = SubprocVecEnv([make_env(i) for i in range(num_cpu)])
+    toc_1 = time.perf_counter()
 
 
-  model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 400,verbose=2, batch_size=200, tensorboard_log='./ppo_lift_4_objects_tensorboard/')
-  print(f"envs and model setup in {toc_1 - tic:0.4f}")
-  print("starting to learn")
-  tic = time.perf_counter()
-  model.learn(total_timesteps = 400*3*8*5, log_interval= 1, tb_log_name="test")
-  toc_2 = time.perf_counter()
-  print(f"training done in  {toc_2 - tic:0.4f}")
+    model = PPO('MultiInputPolicy', vec_gym_env, n_steps = 1200,verbose=1, batch_size=200, tensorboard_log=f"runs/{run.id}", device='gpu')
+    print(f"envs and model setup in {toc_1 - tic:0.4f}")
+    print("starting to learn")
+    tic = time.perf_counter()
+    model.learn(total_timesteps = 200000, log_interval= 1, tb_log_name="test",)
+    toc_2 = time.perf_counter()
+    print(f"training done in  {toc_2 - tic:0.4f}")

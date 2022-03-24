@@ -1,0 +1,227 @@
+2022-03-24 13:19:46,505 INFO    MainThread:147970 [wandb_setup.py:_flush():75] Loading settings from /home/ludvik/.config/wandb/settings
+2022-03-24 13:19:46,506 INFO    MainThread:147970 [wandb_setup.py:_flush():75] Loading settings from /home/ludvik/Desktop/rs_sb3/wandb/settings
+2022-03-24 13:19:46,506 INFO    MainThread:147970 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-03-24 13:19:46,506 INFO    MainThread:147970 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'test_train_model_local_multi.py', 'program': 'test_train_model_local_multi.py'}
+2022-03-24 13:19:46,506 INFO    MainThread:147970 [wandb_init.py:_log_setup():405] Logging user logs to /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_131946-23xmxtfm/logs/debug.log
+2022-03-24 13:19:46,506 INFO    MainThread:147970 [wandb_init.py:_log_setup():406] Logging internal logs to /home/ludvik/Desktop/rs_sb3/wandb/run-20220324_131946-23xmxtfm/logs/debug-internal.log
+2022-03-24 13:19:46,506 INFO    MainThread:147970 [wandb_init.py:init():439] calling init triggers
+2022-03-24 13:19:46,506 INFO    MainThread:147970 [wandb_init.py:init():442] wandb.init called with sweep_config: {}
+config: {}
+2022-03-24 13:19:46,506 INFO    MainThread:147970 [wandb_init.py:init():492] starting backend
+2022-03-24 13:19:46,506 INFO    MainThread:147970 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-03-24 13:19:46,514 INFO    MainThread:147970 [backend.py:ensure_launched():219] starting backend process...
+2022-03-24 13:19:46,519 INFO    MainThread:147970 [backend.py:ensure_launched():224] started backend process with pid: 148017
+2022-03-24 13:19:46,520 INFO    MainThread:147970 [wandb_init.py:init():501] backend started and connected
+2022-03-24 13:19:46,525 INFO    MainThread:147970 [wandb_init.py:init():565] updated telemetry
+2022-03-24 13:19:46,537 INFO    MainThread:147970 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-03-24 13:19:47,441 INFO    MainThread:147970 [wandb_run.py:_on_init():1759] communicating current version
+2022-03-24 13:19:47,620 INFO    MainThread:147970 [wandb_run.py:_on_init():1763] got version response 
+2022-03-24 13:19:47,620 INFO    MainThread:147970 [wandb_init.py:init():625] starting run threads in backend
+2022-03-24 13:19:50,435 INFO    MainThread:147970 [wandb_run.py:_console_start():1733] atexit reg
+2022-03-24 13:19:50,436 INFO    MainThread:147970 [wandb_run.py:_redirect():1606] redirect: SettingsConsole.REDIRECT
+2022-03-24 13:19:50,436 INFO    MainThread:147970 [wandb_run.py:_redirect():1611] Redirecting console.
+2022-03-24 13:19:50,438 INFO    MainThread:147970 [wandb_run.py:_redirect():1667] Redirects installed.
+2022-03-24 13:19:50,438 INFO    MainThread:147970 [wandb_init.py:init():664] run started, returning control to user process
+2022-03-24 13:19:59,245 INFO    MainThread:147970 [wandb_run.py:_config_callback():992] config_cb None None {'algo': 'PPO', 'policy_class': "<class 'stable_baselines3.common.policies.MultiInputActorCriticPolicy'>", 'device': 'cpu', 'env': '<stable_baselines3.common.vec_env.vec_transpose.VecTransposeImage object at 0x7f29b75764c0>', '_vec_normalize_env': 'None', 'verbose': 1, 'policy_kwargs': '{}', 'observation_space': 'Dict(calibrated_camera_image:Box([[[0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]\n  ...\n  [0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]]\n\n [[0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]\n  ...\n  [0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]]\n\n [[0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]\n  ...\n  [0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]\n  [0 0 0 ... 0 0 0]]], [[[255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]\n  ...\n  [255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]]\n\n [[255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]\n  ...\n  [255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]]\n\n [[255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]\n  ...\n  [255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]\n  [255 255 255 ... 255 255 255]]], (3, 240, 403), uint8), robot0_joint_pos:Box([-inf -inf -inf -inf -inf -inf -inf], [inf inf inf inf inf inf inf], (7,), float32))', 'action_space': 'Box([-0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 -1. ], [0.5 0.5 0.5 0.5 0.5 0.5 0.5 1. ], (8,), float32)', 'n_envs': 3, 'num_timesteps': 0, '_total_timesteps': 48000, '_num_timesteps_at_start': 0, 'eval_env': 'None', 'seed': 'None', 'action_noise': 'None', 'start_time': 1648124396.4900992, 'policy': 'MultiInputActorCriticPolicy(\n  (features_extractor): CombinedExtractor(\n    (extractors): ModuleDict(\n      (calibrated_camera_image): NatureCNN(\n        (cnn): Sequential(\n          (0): Conv2d(3, 32, kernel_size=(8, 8), stride=(4, 4))\n          (1): ReLU()\n          (2): Conv2d(32, 64, kernel_size=(4, 4), stride=(2, 2))\n          (3): ReLU()\n          (4): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1))\n          (5): ReLU()\n          (6): Flatten(start_dim=1, end_dim=-1)\n        )\n        (linear): Sequential(\n          (0): Linear(in_features=76544, out_features=256, bias=True)\n          (1): ReLU()\n        )\n      )\n      (robot0_joint_pos): Flatten(start_dim=1, end_dim=-1)\n    )\n  )\n  (mlp_extractor): MlpExtractor(\n    (shared_net): Sequential()\n    (policy_net): Sequential(\n      (0): Linear(in_features=263, out_features=64, bias=True)\n      (1): Tanh()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): Tanh()\n    )\n    (value_net): Sequential(\n      (0): Linear(in_features=263, out_features=64, bias=True)\n      (1): Tanh()\n      (2): Linear(in_features=64, out_features=64, bias=True)\n      (3): Tanh()\n    )\n  )\n  (action_net): Linear(in_features=64, out_features=8, bias=True)\n  (value_net): Linear(in_features=64, out_features=1, bias=True)\n)', 'learning_rate': 0.0003, 'tensorboard_log': './ppo_lift_4_objects_tensorboard/', 'lr_schedule': '<function constant_fn.<locals>.func at 0x7f29b452c160>', '_last_obs': "OrderedDict([('calibrated_camera_image', array([[[[143, 149, 138, ..., 216, 214, 213],\n         [142, 157, 136, ..., 220, 206, 209],\n         [136, 153, 145, ..., 217, 209, 202],\n         ...,\n         [118, 113,  92, ...,  93,  76,  92],\n         [119, 115, 101, ...,  84,  74, 101],\n         [125, 121, 112, ...,  76,  85, 111]],\n\n        [[ 96, 101,  94, ..., 180, 175, 170],\n         [ 94, 105,  90, ..., 183, 166, 171],\n         [ 86, 101,  98, ..., 180, 169, 161],\n         ...,\n         [ 86,  82,  65, ...,  67,  55,  64],\n         [ 87,  84,  72, ...,  60,  53,  69],\n         [ 95,  91,  82, ...,  54,  61,  81]],\n\n        [[ 59,  60,  54, ..., 123, 122, 118],\n         [ 56,  62,  51, ..., 127, 117, 118],\n         [ 50,  58,  56, ..., 126, 119, 110],\n         ...,\n         [ 54,  52,  38, ...,  39,  34,  36],\n         [ 55,  53,  44, ...,  34,  30,  39],\n         [ 61,  59,  52, ...,  32,  37,  50]]],\n\n\n       [[[143, 149, 138, ..., 216, 214, 213],\n         [142, 157, 136, ..., 220, 206, 209],\n         [136, 153, 145, ..., 217, 209, 202],\n         ...,\n         [118, 113,  92, ...,  93,  76,  92],\n         [119, 115, 101, ...,  84,  74, 101],\n         [125, 121, 112, ...,  76,  85, 111]],\n\n        [[ 96, 101,  94, ..., 180, 175, 170],\n         [ 94, 105,  90, ..., 183, 166, 171],\n         [ 86, 101,  98, ..., 180, 169, 161],\n         ...,\n         [ 86,  82,  65, ...,  67,  55,  64],\n         [ 87,  84,  72, ...,  60,  53,  69],\n         [ 95,  91,  82, ...,  54,  61,  81]],\n\n        [[ 59,  60,  54, ..., 123, 122, 118],\n         [ 56,  62,  51, ..., 127, 117, 118],\n         [ 50,  58,  56, ..., 126, 119, 110],\n         ...,\n         [ 54,  52,  38, ...,  39,  34,  36],\n         [ 55,  53,  44, ...,  34,  30,  39],\n         [ 61,  59,  52, ...,  32,  37,  50]]],\n\n\n       [[[143, 149, 138, ..., 216, 214, 213],\n         [142, 157, 136, ..., 220, 206, 209],\n         [136, 153, 145, ..., 217, 209, 202],\n         ...,\n         [118, 113,  92, ...,  93,  76,  92],\n         [119, 115, 101, ...,  84,  74, 101],\n         [125, 121, 112, ...,  76,  85, 111]],\n\n        [[ 96, 101,  94, ..., 180, 175, 170],\n         [ 94, 105,  90, ..., 183, 166, 171],\n         [ 86, 101,  98, ..., 180, 169, 161],\n         ...,\n         [ 86,  82,  65, ...,  67,  55,  64],\n         [ 87,  84,  72, ...,  60,  53,  69],\n         [ 95,  91,  82, ...,  54,  61,  81]],\n\n        [[ 59,  60,  54, ..., 123, 122, 118],\n         [ 56,  62,  51, ..., 127, 117, 118],\n         [ 50,  58,  56, ..., 126, 119, 110],\n         ...,\n         [ 54,  52,  38, ...,  39,  34,  36],\n         [ 55,  53,  44, ...,  34,  30,  39],\n         [ 61,  59,  52, ...,  32,  37,  50]]]], dtype=uint8)), ('robot0_joint_pos', array([[ 0.03528105,  0.65800314,  0.01957476, -1.84518214,  0.03735116,\n         0.58045444,  0.01900177],\n       [ 0.03248691,  0.63776487, -0.01056344, -1.91145937,  0.01730815,\n         0.55396923,  0.03489624],\n       [-0.00833516,  0.64887466, -0.04272392, -1.85719458, -0.03586871,\n         0.58316505,  0.01005763]]))])", '_last_episode_starts': '[ True  True  True]', '_last_original_obs': 'None', '_episode_num': 0, 'use_sde': 'False', 'sde_sample_freq': -1, '_current_progress_remaining': 1, 'ep_info_buffer': 'deque([], maxlen=100)', 'ep_success_buffer': 'deque([], maxlen=100)', '_n_updates': 0, '_logger': '<stable_baselines3.common.logger.Logger object at 0x7f29b7579a60>', '_custom_logger': 'False', 'n_steps': 400, 'gamma': 0.99, 'gae_lambda': 0.95, 'ent_coef': 0.0, 'vf_coef': 0.5, 'max_grad_norm': 0.5, 'rollout_buffer': '<stable_baselines3.common.buffers.DictRolloutBuffer object at 0x7f29b7576fd0>', 'batch_size': 200, 'n_epochs': 10, 'clip_range': '<function constant_fn.<locals>.func at 0x7f29b7574700>', 'clip_range_vf': 'None', 'target_kl': 'None'}
+2022-03-24 13:20:28,900 INFO    MainThread:147970 [wandb_run.py:_atexit_cleanup():1702] got exitcode: 255
+2022-03-24 13:20:28,901 INFO    MainThread:147970 [wandb_run.py:_restore():1674] restore
+2022-03-24 13:20:31,131 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 808
+}
+
+2022-03-24 13:20:31,735 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 808
+}
+
+2022-03-24 13:20:32,473 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 14174
+}
+
+2022-03-24 13:20:32,575 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:32,677 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:32,779 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:32,881 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:32,983 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:33,086 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:33,189 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:33,291 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:33,393 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:33,495 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:33,596 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:33,698 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 808
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:33,800 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 22998
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:33,903 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 22998
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:34,007 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 22998
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:34,110 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 22998
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:34,213 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 22998
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:34,316 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 22998
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:34,419 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 22998
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:34,648 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 22998
+  total_bytes: 22998
+}
+
+2022-03-24 13:20:36,572 INFO    MainThread:147970 [wandb_run.py:_on_finish():1831] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 22998
+  total_bytes: 22998
+}
+local_info {
+}
+
+2022-03-24 13:20:37,928 INFO    MainThread:147970 [wandb_run.py:_footer_history_summary_info():2865] rendering history
+2022-03-24 13:20:37,928 INFO    MainThread:147970 [wandb_run.py:_footer_history_summary_info():2894] rendering summary
+2022-03-24 13:20:37,930 INFO    MainThread:147970 [wandb_run.py:_footer_sync_info():2822] logging synced files

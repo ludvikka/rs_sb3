@@ -91,7 +91,7 @@ if __name__ == '__main__':
   toc_1 = time.perf_counter()
 
 
-  model = SAC('MultiInputPolicy', vec_gym_env, buffer_size=100000, train_freq = (500, "step"), verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/',device='cpu')
+  model = SAC('MultiInputPolicy', vec_gym_env, buffer_size=10000, train_freq = (400, "step"), verbose=2, tensorboard_log='./ppo_lift_4_objects_tensorboard/',device='cpu')
   print(f"envs and model setup in {toc_1 - tic:0.4f}")
   print("starting to learn")
   tic = time.perf_counter()
