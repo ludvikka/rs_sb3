@@ -3,5 +3,5 @@ __pycache__/
 ppo_lift_4_objects_tensorboard/
 wandb/
 runs/
-
+trained_models/
 
