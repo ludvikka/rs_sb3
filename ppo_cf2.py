@@ -12,9 +12,9 @@ cfg.POLICYNAME = 'ppo_cf2'
 
 cfg.N_STEPS = 80
 cfg.BATCH_SIZE = 40
-cfg.TOTAL_TIMESTEPS = 1000000
+cfg.TOTAL_TIMESTEPS = 200000
 
-cfg.NUM_CPUS = 24
+cfg.NUM_CPUS = 3
 cfg.DEVICE = 'auto'
 
 cfg.ENV.FOVY = 31.0350747
