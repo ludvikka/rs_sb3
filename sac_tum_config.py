@@ -13,7 +13,7 @@ cfg.POLICYNAME = 'sac'
 cfg.BATCH_SIZE = 40
 cfg.TOTAL_TIMESTEPS = 200000
 
-cfg.NUM_CPUS = 2
+cfg.NUM_CPUS = 24
 cfg.DEVICE = 'auto'
 
 cfg.ENV.FOVY = 31.0350747

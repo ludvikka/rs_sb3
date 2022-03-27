@@ -3,7 +3,7 @@ import robosuite as suite
 import time
 
 from custom_task import LiftSquareObject
-
+from stable_baselines3.common.env_checker import check_env
 
 from custom_gym_wrapper import CustomGymWrapper
 from custom_gym_wrapper_RGBD import CustomGymWrapperRGBD
@@ -70,7 +70,7 @@ def make_env(rank, cfg ,seed=0):
     """
     def _init():
         env = makeEnv(cfg)
-        env = Monitor(env)
+        env = Monitor(env)    
         env.seed(seed + rank)
         return env
     set_random_seed(seed)
@@ -79,27 +79,34 @@ def make_env(rank, cfg ,seed=0):
 def run_training_sac(cfg):
     num_cpu = cfg.NUM_CPUS
     run = wandb.init(project=cfg.WANDB.NAME,
-                    entity="ludvikka",
-                    sync_tensorboard=True,
-                    config = cfg)
+                     entity="ludvikka",
+                     sync_tensorboard=True,
+                     config = cfg)
     
     callback = WandbCallback(verbose = 2)
-    vec_gym_env = SubprocVecEnv([make_env(i , cfg) for i in range(num_cpu)])
-    env = vec_gym_env
+    env = SubprocVecEnv([make_env(i , cfg) for i in range(num_cpu)])
+    
+    
+    from stable_baselines3.common.vec_env import VecTransposeImage
+    env = VecTransposeImage(env)
+    from stable_baselines3.common.vec_env.vec_monitor import VecMonitor
+    from stable_baselines3.common.vec_env import VecNormalize
+    env = VecNormalize(env, training=True, norm_obs=True, norm_reward=True)
     from stable_baselines3 import SAC
-    from stable_baselines3.sac.policies import MlpPolicy as sacMlp
+    
 
-    policy_kwargs = {"layers": [64, 64], "layer_norm": False}
-    policy = sacMlp
-    model = SAC(policy,
+    #policy_kwargs = {"layers":[64, 64], "layer_norm":False}
+    
+    model = SAC("MultiInputPolicy",
                 env,
-                policy_kwargs=policy_kwargs,
+                #policy_kwargs=policy_kwargs,
                 verbose=1,
                 gamma=0.99,
                 buffer_size=1000000,
                 batch_size=64,
                 learning_rate= 0.0003,
-                tensorboard_log=f"runs/{run.id}")
+                tensorboard_log=f"runs/{run.id}",
+                device ='cpu')
     
     print("starting to learn")
     tic = time.perf_counter()
@@ -108,5 +115,5 @@ def run_training_sac(cfg):
     toc_2 = time.perf_counter()
     print(f"training done in  {toc_2 - tic:0.4f}")
     run.finish()
-    vec_gym_env.close()
+    env.close()
     tb_log_name="test"
