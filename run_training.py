@@ -86,10 +86,10 @@ def run_training(cfg):
     callback = WandbCallback(verbose = 2)
     vec_gym_env = SubprocVecEnv([make_env(i , cfg) for i in range(num_cpu)])
     from stable_baselines3.common.vec_env import VecNormalize
-    env = VecNormalize(vec_gym_env, training=True, norm_obs=True, norm_reward=True, )
+    env = VecNormalize(vec_gym_env, training=True, norm_obs=True, norm_reward=True)
 
     from stable_baselines3 import PPO
-    model = PPO('MultiInputPolicy', vec_gym_env, n_steps = cfg.N_STEPS, verbose=2, batch_size=cfg.BATCH_SIZE, tensorboard_log=f"runs/{run.id}", device=cfg.DEVICE )
+    model = PPO('MultiInputPolicy', env, n_steps = cfg.N_STEPS, verbose=2, batch_size=cfg.BATCH_SIZE, tensorboard_log=f"runs/{run.id}", device=cfg.DEVICE )
     
     print("starting to learn")
     tic = time.perf_counter()
