@@ -14,7 +14,7 @@ cfg.N_STEPS = 400
 cfg.BATCH_SIZE = 50
 cfg.TOTAL_TIMESTEPS = 1000000
 
-cfg.NUM_CPUS = 2
+cfg.NUM_CPUS = 24
 cfg.DEVICE = 'auto'
 
 cfg.ENV.FOVY = 31.0350747
