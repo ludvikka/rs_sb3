@@ -58,3 +58,12 @@ ERROR: GLEW initalization error: Missing GL version
 Thu Mar 24 17:03:01 2022
 ERROR: GLEW initalization error: Missing GL version
 
+Wed Mar 30 12:55:22 2022
+ERROR: Offscreen framebuffer is not complete, error 0x8cdd
+
+Wed Mar 30 12:55:22 2022
+ERROR: Offscreen framebuffer is not complete, error 0x8cdd
+
+Wed Mar 30 12:55:22 2022
+ERROR: Offscreen framebuffer is not complete, error 0x8cdd
+
